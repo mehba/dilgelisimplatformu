@@ -1,58 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-	<title>Dil Gelişim Platformu</title>
-	<meta name="generator" content="LibreOffice 25.2.1.2 (Linux)"/>
-	<meta name="created" content="00:00:00"/>
-	<meta name="changed" content="2025-12-12T11:28:49.658388737"/>
-	<meta name="" content=""/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<style type="text/css">
-		@page { size: 21cm 29.7cm; margin-left: 2cm; margin-right: 1cm; margin-top: 1cm; margin-bottom: 1cm }
-		p { line-height: 115%; margin-bottom: 0.25cm; font-family: "Nunito", sans-serif; background: transparent }
-		pre { font-size: 10pt; font-family: "Liberation Mono", monospace; background: transparent }
-		code { font-family: "Liberation Mono", monospace }
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dil Gelişim Platformu</title>
+    
+    <!-- React ve ReactDOM (CDN) -->
+    <script crossorigin src="[https://unpkg.com/react@18/umd/react.production.min.js](https://unpkg.com/react@18/umd/react.production.min.js)"></script>
+    <script crossorigin src="[https://unpkg.com/react-dom@18/umd/react-dom.production.min.js](https://unpkg.com/react-dom@18/umd/react-dom.production.min.js)"></script>
+    
+    <!-- Babel (JSX'i tarayıcıda çalıştırmak için) -->
+    <script src="[https://unpkg.com/@babel/standalone/babel.min.js](https://unpkg.com/@babel/standalone/babel.min.js)"></script>
+    
+    <!-- Tailwind CSS -->
+    <script src="[https://cdn.tailwindcss.com](https://cdn.tailwindcss.com)"></script>
+    
+    <!-- Font Awesome (İkonlar için) -->
+    <link href="[https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css)" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="[https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap](https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap)" rel="stylesheet">
+
+    <!-- Kendi CSS Dosyanızı Bağlama -->
+    <link rel="stylesheet" href="style.css">
 </head>
-<body lang="tr-TR" link="#000080" vlink="#800000" dir="ltr"><pre style="margin-bottom: 0.25cm; line-height: 115%"><font face="Nunito, sans-serif"><code>&lt;!DOCTYPE html&gt;</code></font>
-<font face="Nunito, sans-serif"><code>&lt;html lang=&quot;tr&quot;&gt;</code></font>
-<font face="Nunito, sans-serif"><code>&lt;head&gt;</code></font>
-<code>    <font face="Nunito, sans-serif">&lt;meta charset=&quot;UTF-8&quot;&gt;</font></code>
-<code>    <font face="Nunito, sans-serif">&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</font></code>
-<code>    <font face="Nunito, sans-serif">&lt;title&gt;Dil Gelişim Platformu&lt;/title&gt;</font></code>
-<code>    </code>
-<code>    <font face="Nunito, sans-serif">&lt;!-- React ve ReactDOM (CDN) --&gt;</font></code>
-<code>    <font face="Nunito, sans-serif">&lt;script crossorigin src=&quot;[https://unpkg.com/react@18/umd/react.production.min.js](https://unpkg.com/react@18/umd/react.production.min.js)&quot;&gt;&lt;/script&gt;</font></code>
-<code>    <font face="Nunito, sans-serif">&lt;script crossorigin src=&quot;[https://unpkg.com/react-dom@18/umd/react-dom.production.min.js](https://unpkg.com/react-dom@18/umd/react-dom.production.min.js)&quot;&gt;&lt;/script&gt;</font></code>
-<code>    </code>
-<code>    <font face="Nunito, sans-serif">&lt;!-- Babel (JSX'i tarayıcıda çalıştırmak için) --&gt;</font></code>
-<code>    <font face="Nunito, sans-serif">&lt;script src=&quot;[https://unpkg.com/@babel/standalone/babel.min.js](https://unpkg.com/@babel/standalone/babel.min.js)&quot;&gt;&lt;/script&gt;</font></code>
-<code>    </code>
-<code>    <font face="Nunito, sans-serif">&lt;!-- Tailwind CSS --&gt;</font></code>
-<code>    <font face="Nunito, sans-serif">&lt;script src=&quot;[https://cdn.tailwindcss.com](https://cdn.tailwindcss.com)&quot;&gt;&lt;/script&gt;</font></code>
-<code>    </code>
-<code>    <font face="Nunito, sans-serif">&lt;!-- Font Awesome (İkonlar için) --&gt;</font></code>
-<code>    <font face="Nunito, sans-serif">&lt;link href=&quot;[https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css)&quot; rel=&quot;stylesheet&quot;&gt;</font></code>
-<code>    </code>
-<code>    <font face="Nunito, sans-serif">&lt;!-- Google Fonts --&gt;</font></code>
-<code>    <font face="Nunito, sans-serif">&lt;link href=&quot;[https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&amp;display=swap](https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&amp;display=swap)&quot; rel=&quot;stylesheet&quot;&gt;</font></code>
+<body>
 
-<code>    <font face="Nunito, sans-serif">&lt;!-- Kendi CSS Dosyanızı Bağlama --&gt;</font></code>
-<code>    <font face="Nunito, sans-serif">&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;</font></code>
-<font face="Nunito, sans-serif"><code>&lt;/head&gt;</code></font>
-<font face="Nunito, sans-serif"><code>&lt;body&gt;</code></font>
+<div id="root"></div>
 
-<font face="Nunito, sans-serif"><code>&lt;div id=&quot;root&quot;&gt;&lt;/div&gt;</code></font>
+<!-- Kendi JS Dosyanızı Bağlama (Önemli: type="text/babel" olmalı) -->
+<script type="text/babel" src="script.js"></script>
 
-<font face="Nunito, sans-serif"><code>&lt;!-- Kendi JS Dosyanızı Bağlama (Önemli: type=&quot;text/babel&quot; olmalı) --&gt;</code></font>
-<font face="Nunito, sans-serif"><code>&lt;script type=&quot;text/babel&quot; src=&quot;script.js&quot;&gt;&lt;/script&gt;</code></font>
-
-<font face="Nunito, sans-serif"><code>&lt;/body&gt;</code></font>
-<font face="Nunito, sans-serif"><code>&lt;/html&gt;</code></font></pre><p>
-<br/>
-<br/>
-
-</p>
 </body>
 </html>
