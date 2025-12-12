@@ -325,7 +325,7 @@ function App() {
                                 }`}
                             >
                                 <span className="text-xl leading-none">{lang.flag}</span>
-                                <span>{lang.name}</span>
+                                    <span>{lang.name}</span>
                             </button>
                         ))}
                     </div>
